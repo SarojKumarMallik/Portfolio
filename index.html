@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/protofolio_logo.png"/>
+    <title>Santosh Dash Protofolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/162054218e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Header section start-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closesidemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="opensidemenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="header-text-name">
+                    <h1>Hello, It's Me<br/><span>Santosh Dash</span></h1>
+                    <p style="font-size: 25px;">And I'm a <br/> <span class="text" style="color: #a7fd06;"></span></p>
+                </div>
+                <br/>
+                <div class="header-text-photo" >
+                    <img  src="images/MYFULLPHOTO.jpg" alt="santoshdashphoto"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Header section end-->
+
+    <!--About section start-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img data-aos="zoom-in-right" src="images/SANTOSH.jpg" alt="photo1"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="sub-desc">I have currently studied in my final year with a bachelor's 
+                        degree in computer 
+                        science and have completed relevant coursework in .net development.
+                        While my formal experience may be limited, I have a solid foundation in c# 
+                        programming and have 
+                        successfully completed several projects and assignments also.
+                    </p>
+                    <div class="tab_titles">
+                        <p class="tab_links active_link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br/>C, C#, Java, C++, Python</li>
+                            <li><span>Frontend</span><br/>Html,Css,Javascript,Bootstrap,React.Js</li>
+                            <li><span>Backend</span><br/>Asp.Net MVC,Asp.Net Core,Entity Framework,Ado.Net,Sql Server,Web Api</li>
+                            <li><span>Tools</span><br/>Vs Code,Canva,Windows,Visual Studio,Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="experience">
+                        <ul>
+                            <li><span>2022 - 2023 Oct</span><br/>.Net Training at Abacus system and solutions pvt.ltd </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br/>Final year of B.Tech at Raajdhani Engineering College, BHUBANESWAR</li>
+                            <li><span>2018 - 2020</span><br/>+2 from Tulasipur Higher Secondary School, CUTTACK</li>
+                            <li><span>2017 - 2018</span><br/>10<sup>th</sup> from Fazle Haque High School, KENDRAPARA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About section end-->
+
+
+    <!--Services section start-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>A front-end developer creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. When you visit a website, the design elements you see were created by a front-end developer.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>Backend developer responsibilities include creating, maintaining, testing, and debugging the entire back end of an application or system. This includes the core application logic, databases, data and application integration, API, and other processes taking place behind the scenes.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI UX designers create the user interface for an app, website, or other interactive media. Their work includes collaborating with product managers and engineers to gather requirements from users before designing ideas that can be communicated using storyboards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services section end-->
+
+
+
+
+
+    <!--Projects section start-->
+    <div id="projects">
+        <div class="container">
+            <div class="sub-title">My Projects</div>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/batchmanagementproject_photo.jpg" alt="project1"/>
+                    <div class="layer">
+                        <h3>Batch Management System</h3>
+                        <p>This project is done by using Asp.Net Mvc,Entity Framework and SqlServer. </p>
+                        <a href="https://github.com/Santosh-dash123/BATCH_MANAGEMENT_SYSTEM"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/foodmanagementproject_photo.png" alt="project2"/>
+                    <div class="layer">
+                        <h3>Food Management System</h3>
+                        <p>This project is done by using Html,Css and Bootstrap.</p>
+                        <a href="https://github.com/Santosh-dash123/demo-Project4"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gymmanagementproject_photo.jpg" alt="project3"/>
+                    <div class="layer">
+                        <h3>Gym Management System</h3>
+                        <p>This project is done by using Asp.Net WebForm,Ado.Net and SqlServer. </p>
+                        <a href="https://github.com/Santosh-dash123/abacus-system"><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Santosh-dash123" class="btn">See more</a>
+        </div>
+    </div>
+    <!--Projects section end-->
+
+    <!--Contact section start-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> dash44462@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 8658754026</p>
+                    <div class="social_icons">
+                        <a href="https://www.facebook.com/profile.php?id=100082562538467"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/santosh_dash8658/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/santosh-dash-81734b224/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Santosh-dash123"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/SANTOSH DASH.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" class="Name" name="Name" placeholder="Your Name" required/>
+                        <input type="email" class="email" name="email" placeholder="Your Email" required/>
+                        <textarea name="Message" class="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-arrow-up" onclick="gototop()"></i>
+        <div class="copyright">
+            <p>
+                <i class="fas fa-heart" style="margin-right: 5px;"></i>Copyright &copy; By Santosh Dash<i style="margin-left: 5px;" class="fas fa-heart"></i>
+            </p>
+        </div>
+    </div>
+    <!--Contact section end-->
+
+
+
+    <!--Script section start-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active_link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active_tab");
+            }
+            event.currentTarget.classList.add("active_link");
+            document.getElementById(tabname).classList.add("active_tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function opensidemenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closesidemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        function gototop()
+        {
+            window.scrollTo(top);
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3wP34_vB8fDoED1GM8GYZZerIDhhGKkI5g2FVdFHHpgGhPEzgOnSfw5l32Sn6Lq_ZoQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+
+                setTimeout(() => {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <script>
+        var typed = new Typed(".text",{
+            strings:["Frontend Developer",".Net Developer","Web Developer"],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop:true
+        });
+    </script>
+    <!--Script section end-->
+</body>
+</html>
