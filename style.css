@@ -97,7 +97,7 @@ nav ul li a:hover::after
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    filter: grayscale(100%);
+    filter: grayscale(30%);
     transition: 1s ease;
     cursor: pointer;
 }
